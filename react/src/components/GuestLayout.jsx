@@ -1,5 +1,6 @@
 import { Outlet, Navigate } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
+import { motion } from "framer-motion"
 
 export default function GuestLayout() {
   const { token } = useStateContext()
@@ -11,7 +12,6 @@ export default function GuestLayout() {
   }
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Guest Layout</h1>
       <Outlet></Outlet>
     </>
   );
